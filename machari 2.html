@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Organization</title>
+
+    <style>
+        :root {
+            --green-main: #7fb9a2;
+            --green-soft: #e6f2ee;
+            --green-accent: #4f8f7a;
+            --green-card: #f3faf7;
+            --text-dark: #2f3e3a;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: var(--green-soft);
+            color: var(--text-dark);
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(to bottom, #a8d5c3, var(--green-main));
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        header img {
+            width: 90px;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            margin: 5px 0;
+            color: white;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 12px;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        header section {
+            margin-top: 25px;
+            padding: 25px;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 14px;
+            max-width: 850px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: var(--green-card);
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+        }
+
+        h2, h3 {
+            color: var(--green-accent);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        article {
+            background-color: white;
+            padding: 20px;
+            border-radius: 14px;
+            margin-bottom: 25px;
+            border-left: 6px solid var(--green-main);
+        }
+
+        label {
+            font-weight: 600;
+            color: var(--green-accent);
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid #c9ddd6;
+            font-family: inherit;
+        }
+
+        input[type="submit"] {
+            background-color: var(--green-main);
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: var(--green-accent);
+        }
+
+        /* Donation styles */
+        .donation-box {
+            background-color: white;
+            padding: 30px;
+            border-radius: 16px;
+            border: 2px solid var(--green-main);
+        }
+
+        .donation-amounts button {
+            background-color: var(--green-soft);
+            border: 1px solid var(--green-main);
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .donation-amounts button:hover {
+            background-color: var(--green-main);
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #d6ece4;
+            color: #3f5f56;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <!-- LOGO -->
+        <img src="https://share.icloud.com/photos/00bbu064NKiwgCdZ-ydJYPRuQ" alt="Organization Logo">
+
+        <h1>Giving Touch Initiative</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#news">News & Events</a>
+            <a href="#donate">Donate</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home">
+            <h2>Hands that give, Hearts that heal </h2>
+            <p>
+                Empowering communities through sustainable programs,
+                innovation, and meaningful partnerships.
+            </p>
+            <p><strong>Together, we grow a better future.</strong></p>
+        </section>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            We are dedicated to creating long-lasting social impact through
+            education, development, and community-centered solutions.
+        </p>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Community Development</li>
+            <li>Skills & Training Programs</li>
+            <li>Business & Project Consulting</li>
+            <li>Research & Advisory</li>
+        </ul>
+    </section>
+
+    <!-- News -->
+    <section id="news">
+        <h2>News & Events</h2>
+
+        <article>
+            <h3>Youth Empowerment Workshop</h3>
+            <p><strong>Date:</strong> 22 March 2026</p>
+            <p>
+                A hands-on workshop focused on career readiness and
+                digital skills for young people.
+            </p>
+        </article>
+
+        <article>
+            <h3>Green Community Initiative</h3>
+            <p><strong>Date:</strong> 10 April 2026</p>
+            <p>
+                Launch of our environmental sustainability project.
+            </p>
+        </article>
+
+        <h3>Post News or Event</h3>
+        <form>
+            <label>Title</label>
+            <input type="text">
+
+            <label>Date</label>
+            <input type="date">
+
+            <label>Description</label>
+            <textarea rows="4"></textarea>
+
+            <input type="submit" value="Post">
+        </form>
+    </section>
+
+    <!-- Donation -->
+    <section id="donate">
+        <h2>Support Our Work</h2>
+        <p>
+            Your donation helps us support communities and expand
+            our impact.
+        </p>
+
+        <div class="donation-box">
+            <h3>Make a Donation</h3>
+
+            <div class="donation-amounts">
+                <button>R100</button>
+                <button>R250</button>
+                <button>R500</button>
+                <button>R1000</button>
+            </div>
+
+            <form>
+                <label>Custom Amount (ZAR)</label>
+                <input type="number">
+
+                <label>Full Name</label>
+                <input type="text">
+
+                <label>Email</label>
+                <input type="email">
+
+                <input type="submit" value="Donate Now">
+            </form>
+
+            <p><em>Payment gateway integration required for live donations.</em></p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@example.com</p>
+        <p>Phone: +27 00 000 0000</p>
+
+        <form>
+            <label>Full Name</label>
+            <input type="text">
+
+            <label>Email</label>
+            <input type="email">
+
+            <label>Message</label>
+            <textarea rows="4"></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© Giving Touch Initiative. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
